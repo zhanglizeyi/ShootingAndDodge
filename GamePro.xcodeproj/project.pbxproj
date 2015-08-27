@@ -14,6 +14,9 @@
 		E4B73DBC1B8FBB880017DCAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73DBA1B8FBB880017DCAA /* Main.storyboard */; };
 		E4B73DBE1B8FBB880017DCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B73DBD1B8FBB880017DCAA /* Assets.xcassets */; };
 		E4B73DC11B8FBB880017DCAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73DBF1B8FBB880017DCAA /* LaunchScreen.storyboard */; };
+		E4B73DCD1B8FBFD60017DCAA /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = E4B73DCA1B8FBFD60017DCAA /* background-music-aac.caf */; };
+		E4B73DCE1B8FBFD60017DCAA /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = E4B73DCB1B8FBFD60017DCAA /* pew-pew-lei.caf */; };
+		E4B73DCF1B8FBFD60017DCAA /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4B73DCC1B8FBFD60017DCAA /* sprites.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		E4B73DBD1B8FBB880017DCAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B73DC01B8FBB880017DCAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4B73DC21B8FBB880017DCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B73DCA1B8FBFD60017DCAA /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		E4B73DCB1B8FBFD60017DCAA /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		E4B73DCC1B8FBFD60017DCAA /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +72,27 @@
 				E4B73DBD1B8FBB880017DCAA /* Assets.xcassets */,
 				E4B73DBF1B8FBB880017DCAA /* LaunchScreen.storyboard */,
 				E4B73DC21B8FBB880017DCAA /* Info.plist */,
+				E4B73DC81B8FBFD60017DCAA /* SpriteKitSimpleGameResources 2 */,
 			);
 			path = GamePro;
+			sourceTree = "<group>";
+		};
+		E4B73DC81B8FBFD60017DCAA /* SpriteKitSimpleGameResources 2 */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73DC91B8FBFD60017DCAA /* Sounds */,
+				E4B73DCC1B8FBFD60017DCAA /* sprites.atlas */,
+			);
+			path = "SpriteKitSimpleGameResources 2";
+			sourceTree = "<group>";
+		};
+		E4B73DC91B8FBFD60017DCAA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73DCA1B8FBFD60017DCAA /* background-music-aac.caf */,
+				E4B73DCB1B8FBFD60017DCAA /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,10 +152,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B73DCF1B8FBFD60017DCAA /* sprites.atlas in Resources */,
+				E4B73DCD1B8FBFD60017DCAA /* background-music-aac.caf in Resources */,
 				E4B73DB51B8FBB880017DCAA /* GameScene.sks in Resources */,
 				E4B73DC11B8FBB880017DCAA /* LaunchScreen.storyboard in Resources */,
 				E4B73DBE1B8FBB880017DCAA /* Assets.xcassets in Resources */,
 				E4B73DBC1B8FBB880017DCAA /* Main.storyboard in Resources */,
+				E4B73DCE1B8FBFD60017DCAA /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GamePro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zl.GamePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -268,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GamePro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zl.GamePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
